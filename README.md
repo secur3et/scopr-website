@@ -1,7 +1,5 @@
 # Scopr - XBow Data Mining & File Analysis Technology
 
-A completely redesigned, professional website showcasing Scopr's powerful DDDA (Decomposition, Decryption, Decompression, and Analysis) technology powered by XBow data mining.
-
 ## 🚀 **What is Scopr?**
 
 Scopr provides **two powerful solutions** for file analysis:
@@ -64,12 +62,6 @@ scopr/
 └── logo.png            # Scopr logo (add this)
 ```
 
-## 🚀 **Getting Started**
-
-1. **Download** the project files
-2. **Add your logo**: Replace `logo.png` with the actual Scopr logo
-3. **Customize content**: Update any specific details or metrics
-4. **Deploy**: Upload to your web hosting service
 
 ## 📊 **Guest User Limits** (XRay)
 
@@ -105,16 +97,6 @@ scopr/
 - Mac: DMG, Mach-O
 - Virtual: VHD, VMDK, ISO
 
-## 🎯 **Target Markets**
-
-- **Individual Users**: File analysis through XRay web interface
-- **Security Professionals**: Safe malware and threat analysis
-- **Enterprise**: Integration via Scoprd backend service
-- **OEM Partnerships**: Custom integrations and solutions
-
-## 🌐 **Live Demo**
-
-The website includes a direct link to try **Scopr XRay** at [scopr.com](https://scopr.com) for immediate file analysis.
 
 ## 📞 **Contact & Support**
 
@@ -122,13 +104,6 @@ The website includes a direct link to try **Scopr XRay** at [scopr.com](https://
 - **Support**: [scopr.com/html/support.html](https://scopr.com/html/support.html)
 - **About**: [scopr.com/html/about.html](https://scopr.com/html/about.html)
 - **Products**: [scopr.com/html/products.html](https://scopr.com/html/products.html)
-
-## 🚀 **Next Steps**
-
-1. **Add your logo** to replace the placeholder
-2. **Test the website** on different devices
-3. **Customize any content** specific to your needs
-4. **Deploy and launch** your new professional website
 
 ---
 
