@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Scopr File Analysis Tool</title>
+    <meta name="description" content="Get in touch with Scopr for support, partnerships, or to learn more about our lightning-fast file analysis technology.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Scopr Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Ready to experience lightning-fast file analysis? We're here to help.</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <h2 class="section-title">How Can We Help You?</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Consumer Support</h3>
+                    <p>Get help with file extraction, learn about features, or report issues.</p>
+                    <button class="btn btn-primary contact-toggle" data-form="consumer">Contact Support</button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security & Enterprise</h3>
+                    <p>Learn about security analysis capabilities and enterprise solutions.</p>
+                    <button class="btn btn-primary contact-toggle" data-form="security">Learn More</button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Scoprd Integration</h3>
+                    <p>Integrate Scoprd backend service into your products and services.</p>
+                    <button class="btn btn-primary contact-toggle" data-form="oem">Integration Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Forms -->
+    <section class="contact-forms">
+        <div class="container">
+            <!-- Consumer Support Form -->
+            <div id="consumer-form" class="contact-form active">
+                <h2>Consumer Support</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="consumer-name">Name</label>
+                        <input type="text" id="consumer-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consumer-email">Email</label>
+                        <input type="email" id="consumer-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="consumer-subject">Subject</label>
+                        <select id="consumer-subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="general">General Question</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="bug">Bug Report</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="consumer-message">Message</label>
+                        <textarea id="consumer-message" name="message" rows="5" required placeholder="Describe your question or issue..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Security & Enterprise Form -->
+            <div id="security-form" class="contact-form">
+                <h2>Security & Enterprise Solutions</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="security-name">Name</label>
+                        <input type="text" id="security-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="security-email">Email</label>
+                        <input type="email" id="security-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="security-company">Company</label>
+                        <input type="text" id="security-company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="security-role">Role</label>
+                        <input type="text" id="security-role" name="role" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="security-use-case">Primary Use Case</label>
+                        <select id="security-use-case" name="use-case" required>
+                            <option value="">Select use case</option>
+                            <option value="malware-analysis">Malware Analysis</option>
+                            <option value="threat-detection">Threat Detection</option>
+                            <option value="incident-response">Incident Response</option>
+                            <option value="security-auditing">Security Auditing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="security-message">Tell us about your needs</label>
+                        <textarea id="security-message" name="message" rows="5" required placeholder="Describe your security analysis requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                </form>
+            </div>
+
+            <!-- Scoprd Integration Form -->
+            <div id="oem-form" class="contact-form">
+                <h2>Scoprd Integration Inquiry</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="oem-name">Name</label>
+                        <input type="text" id="oem-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="oem-email">Email</label>
+                        <input type="email" id="oem-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="oem-company">Company</label>
+                        <input type="text" id="oem-company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="oem-role">Role</label>
+                        <input type="text" id="oem-role" name="role" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="oem-product">Integration Type</label>
+                        <select id="oem-product" name="product" required>
+                            <option value="">Select integration type</option>
+                            <option value="file-upload-service">File Upload Service</option>
+                            <option value="security-platform">Security Platform</option>
+                            <option value="content-management">Content Management</option>
+                            <option value="enterprise-software">Enterprise Software</option>
+                            <option value="api-service">API Service</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="oem-volume">Expected Volume</label>
+                        <select id="oem-volume" name="volume" required>
+                            <option value="">Select volume range</option>
+                            <option value="low">Low (1-1000 files/day)</option>
+                            <option value="medium">Medium (1000-10000 files/day)</option>
+                            <option value="high">High (10000+ files/day)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="oem-message">Integration Details</label>
+                        <textarea id="oem-message" name="message" rows="5" required placeholder="Describe your integration needs and how you plan to use Scoprd..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Integration Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <h2 class="section-title">Other Ways to Reach Us</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>support@scopr.com</p>
+                    <p>business@scopr.com</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Website</h3>
+                    <p>scopr.com</p>
+                    <p>Documentation & Support</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Response Time</h3>
+                    <p>Consumer: 24 hours</p>
+                    <p>Business: 4 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Scopr Logo" class="logo">
+                    <p>The Home of XBow Technology</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="use-cases.html">Use Cases</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="support.html">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2014-2025 Scopr LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form toggle functionality
+        document.querySelectorAll('.contact-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const formType = this.getAttribute('data-form');
+                
+                // Hide all forms
+                document.querySelectorAll('.contact-form').forEach(form => {
+                    form.classList.remove('active');
+                });
+                
+                // Show selected form
+                document.getElementById(formType + '-form').classList.add('active');
+                
+                // Scroll to form
+                document.getElementById(formType + '-form').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Form submission handling
+        document.querySelectorAll('.form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show success message
+                const button = this.querySelector('button[type="submit"]');
+                const originalText = button.textContent;
+                button.textContent = 'Message Sent!';
+                button.style.background = '#4CAF50';
+                
+                // Reset form
+                this.reset();
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '';
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopr - XBow Data Mining & File Analysis Technology</title>
+    <meta name="description" content="Scopr provides lightning-fast file decomposition, decryption, decompression, and analysis (DDDA) technology powered by XBow data mining.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Scopr Logo" class="logo">
+                <span class="logo-text">The Home of XBow Technology</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#technology" class="nav-link">Technology</a></li>
+                <li><a href="#formats" class="nav-link">File Formats</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    XBow-Powered
+                    <span class="highlight">File Analysis</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Decomposition, Decryption, Decompression, and Analysis (DDDA) technology that reveals the hidden structure of any file format.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">48</div>
+                        <div class="stat-label">Archive Formats</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">File Types</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Depth Levels</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="https://scopr.com" class="btn btn-secondary" target="_blank">Try XRay</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="file-analysis-demo">
+                    <div class="file-stack">
+                        <div class="file-layer" data-depth="0">
+                            <i class="fas fa-file-archive"></i>
+                            <span>ZIP</span>
+                        </div>
+                        <div class="file-layer" data-depth="1">
+                            <i class="fas fa-file-archive"></i>
+                            <span>RAR</span>
+                        </div>
+                        <div class="file-layer" data-depth="2">
+                            <i class="fas fa-file-image"></i>
+                            <span>JPEG</span>
+                        </div>
+                    </div>
+                    <div class="analysis-result">
+                        <div class="result-text">ZIP → RAR → JPEG</div>
+                        <div class="result-depth">Depth: 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Two Powerful Solutions</h2>
+            <div class="products-grid">
+                <div class="product-card primary">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Scopr XRay</h3>
+                        <div class="product-badge">Web Interface</div>
+                    </div>
+                    <p class="product-description">
+                        Access XRay from any web browser. Upload files and get instant analysis with no software installation required.
+                    </p>
+                    <ul class="product-features">
+                        <li>Browser-based access</li>
+                        <li>Drag & drop file uploads</li>
+                        <li>Real-time analysis results</li>
+                        <li>Guest user access available</li>
+                    </ul>
+                    <div class="product-limits">
+                        <h4>Guest User Limits:</h4>
+                        <ul>
+                            <li>Max extraction depth: 3 levels</li>
+                            <li>Max file size: 250KB</li>
+                            <li>Max items per depth: 50</li>
+                            <li>Max processing time: 10 seconds</li>
+                        </ul>
+                    </div>
+                    <a href="https://scopr.com" class="btn btn-primary" target="_blank">Try XRay Now</a>
+                </div>
+                
+                <div class="product-card secondary">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Scopr Scoprd</h3>
+                        <div class="product-badge">Backend Service</div>
+                    </div>
+                    <p class="product-description">
+                        Windows service or Linux daemon providing the same DDDA capabilities without a user interface.
+                    </p>
+                    <ul class="product-features">
+                        <li>Windows service / Linux daemon</li>
+                        <li>IPv4/IPv6 protocol support</li>
+                        <li>Command-line interface</li>
+                        <li>JSON response format</li>
+                    </ul>
+                    <div class="product-integration">
+                        <h4>Perfect for:</h4>
+                        <ul>
+                            <li>Enterprise integrations</li>
+                            <li>Custom applications</li>
+                            <li>High-volume processing</li>
+                            <li>OEM partnerships</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Integration Inquiry</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <h2 class="section-title">XBow Technology</h2>
+            <p class="section-subtitle">Advanced data mining and tracking capabilities powering Scopr's file analysis</p>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Nested Container Analysis</h3>
+                    <p>Analyze files within files to virtually any depth, even if the data is encrypted or compressed.</p>
+                    <div class="tech-example">
+                        <strong>Example:</strong> ZIP → RAR → PDF → Text
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure by Design</h3>
+                    <p>No file execution - purely analysis and extraction. Safe for inspecting suspicious files.</p>
+                    <div class="tech-example">
+                        <strong>Security:</strong> Analyze malware without risk
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Content Inspection</h3>
+                    <p>Identify file types by examining file data, not just extensions. Reveals hidden file formats.</p>
+                    <div class="tech-example">
+                        <strong>Detection:</strong> 100+ file types identified
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized algorithms deliver results in milliseconds, not seconds. Process thousands of files efficiently.</p>
+                    <div class="tech-example">
+                        <strong>Performance:</strong> 10x faster than alternatives
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- File Formats Section -->
+    <section id="formats" class="formats">
+        <div class="container">
+            <h2 class="section-title">Comprehensive Format Support</h2>
+            <p class="section-subtitle">48 archive formats and 100+ file types supported</p>
+            
+            <div class="formats-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="archives">Archive Formats</button>
+                    <button class="tab-btn" data-tab="documents">Documents</button>
+                    <button class="tab-btn" data-tab="media">Media & Images</button>
+                    <button class="tab-btn" data-tab="system">System Files</button>
+                </div>
+                
+                <div class="tab-content active" id="archives">
+                    <div class="format-grid">
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>ZIP (.zip, .apk, .jar)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>RAR (.rar)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>7-Zip (.7z)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>TAR (.tar)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>GZIP (.gz)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>BZIP2 (.bz2)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>ACE (.ace)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>ARJ (.arj)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>LHA (.lha/.lzh)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>StuffIt (.sit)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>ZOO (.zoo)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>And 37 more...</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="documents">
+                    <div class="format-grid">
+                        <div class="format-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>PDF (.pdf)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-word"></i>
+                            <span>Word (.doc, .docx)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-excel"></i>
+                            <span>Excel (.xls, .xlsx)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-powerpoint"></i>
+                            <span>PowerPoint (.ppt, .pptx)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Rich Text (.rtf)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-code"></i>
+                            <span>HTML (.html, .htm)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-archive"></i>
+                            <span>Compiled HTML (.chm)</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Open Document (.odf)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="media">
+                    <div class="format-grid">
+                        <div class="format-item">
+                            <i class="fas fa-file-image"></i>
+                            <span>Images: PNG, JPEG, GIF, BMP, TIFF</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-audio"></i>
+                            <span>Audio: MP3, WAV, OGG, RealAudio</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-video"></i>
+                            <span>Video: AVI, ASF, SWF, FLIC</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-cube"></i>
+                            <span>3D: 3DS, 3DMF, DWG</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-image"></i>
+                            <span>Icons: ICO, CUR</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-file-image"></i>
+                            <span>Vector: EMF, WMF, CGM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="system">
+                    <div class="format-grid">
+                        <div class="format-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Windows: EXE, DLL, CAB, MSI</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Linux: ELF, RPM, DEB</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Mac: DMG, Mach-O</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-coffee"></i>
+                            <span>Java: .class files</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>Virtual: VHD, VMDK, ISO</span>
+                        </div>
+                        <div class="format-item">
+                            <i class="fas fa-database"></i>
+                            <span>Data: HDF, Intel Hex, UUEncode</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Analyze Files Like Never Before?</h2>
+            <p>Experience the power of XBow technology with Scopr's lightning-fast DDDA capabilities.</p>
+            <div class="cta-buttons">
+                <a href="https://scopr.com" class="btn btn-primary" target="_blank">Try XRay Free</a>
+                <a href="#contact" class="btn btn-secondary">Enterprise Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Scopr Logo" class="logo">
+                    <p>The Home of XBow Technology</p>
+                    <p class="footer-tagline">Advanced data mining and file analysis</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#products">XRay Web Interface</a></li>
+                            <li><a href="#products">Scoprd Backend</a></li>
+                            <li><a href="#technology">XBow Technology</a></li>
+                            <li><a href="#formats">File Format Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="https://scopr.com/html/about.html" target="_blank">About Scopr</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="https://scopr.com/html/support.html" target="_blank">Support</a></li>
+                            <li><a href="https://scopr.com/html/products.html" target="_blank">Product Info</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2014-2025 Scopr LLC. All rights reserved.</p>
+                <p>Powered by XBow Data Mining and Tracking Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
